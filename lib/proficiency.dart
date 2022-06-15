@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'reading_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -57,9 +58,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 "How proficient are you?",
                 style: TextStyle(
-                    fontFamily: 'Nunito',
-                    fontSize: 35,
-                    fontWeight: FontWeight.w900),
+                    //fontFamily: 'Nunito',
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             Padding(
@@ -71,9 +72,9 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 "We've got everyone covered",
                 style: TextStyle(
-                    fontFamily: 'Nunito',
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600),
+                  //fontFamily: 'Nunito',
+                  fontSize: 18,
+                ),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -87,7 +88,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontSize: 20,
                           fontWeight: FontWeight.w700)),
                   style: ElevatedButton.styleFrom(
-                      primary: Color(0xff99c661), onPrimary: Colors.white),
+                      shape: StadiumBorder(),
+                      padding: EdgeInsets.only(
+                          top: 10, bottom: 10, left: 47, right: 47),
+                      primary: Color(0xff99c661),
+                      onPrimary: Colors.white),
                   onPressed: () {},
                 ),
                 SizedBox(
@@ -102,6 +107,9 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontWeight: FontWeight.w700),
                   ),
                   style: ElevatedButton.styleFrom(
+                      shape: StadiumBorder(),
+                      padding: EdgeInsets.only(
+                          top: 10, bottom: 10, left: 30, right: 30),
                       primary: const Color(0xffff5757),
                       onPrimary: Colors.white),
                   onPressed: () {},
@@ -116,6 +124,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontSize: 20,
                           fontWeight: FontWeight.w700)),
                   style: ElevatedButton.styleFrom(
+                      shape: StadiumBorder(),
+                      padding: EdgeInsets.only(
+                          top: 10, bottom: 10, left: 47, right: 47),
                       primary: const Color(0xffff0065),
                       onPrimary: Colors.white),
                   onPressed: () {},
@@ -128,8 +139,17 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontSize: 20,
                           fontWeight: FontWeight.w700)),
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.white, onPrimary: Color(0xffff0265)),
-                  onPressed: () {},
+                      shape: StadiumBorder(),
+                      padding: EdgeInsets.only(
+                          top: 10, bottom: 10, left: 60, right: 60),
+                      primary: Colors.white,
+                      onPrimary: Color(0xffff0265)),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => readingScreen()),
+                    );
+                  },
                 )
               ],
             )

@@ -18,8 +18,8 @@ class _GameSettingsState extends State<GameSettings> {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-            Color.fromARGB(255, 247, 234, 226),
-            Color.fromARGB(255, 226, 173, 144)
+            Color.fromARGB(255, 255, 255, 255),
+            Color.fromARGB(255, 243, 218, 218)
           ])),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -30,99 +30,165 @@ class _GameSettingsState extends State<GameSettings> {
                 Text(
                   "What's your Genre?",
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                       color: Colors.black),
                   textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 Text(
                   "Choose a category that interests you the most!",
                   style: TextStyle(fontSize: 15, color: Colors.black),
                   textAlign: TextAlign.center,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Container(
-                      margin: EdgeInsets.all(15.0),
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Fiction",
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(15.0),
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Comedy",
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ],
+                SizedBox(
+                  height: 30,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.all(15.0),
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Historic",
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
+                      width: 100.0,
+                      height: 100.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                              width: 64,
+                              height: 64,
+                              child: Image.network(
+                                  "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/undefined/external-fiction-literature-flaticons-lineal-color-flat-icons-3.png")),
+                          Container(
+                            child: Text(
+                              "Fiction",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(15.0),
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Romance",
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
+                      width: 100.0,
+                      height: 100.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                              width: 64,
+                              height: 64,
+                              child: Image.network(
+                                  "https://img.icons8.com/color/64/undefined/comedy.png")),
+                          Container(
+                            child: Text(
+                              "Comedy",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
+                ),
+                SizedBox(
+                  height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Container(
-                      margin: EdgeInsets.all(15.0),
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Thriler",
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
+                      width: 100.0,
+                      height: 100.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                              width: 64,
+                              height: 64,
+                              child: Image.network(
+                                  "https://img.icons8.com/external-flaticons-flat-flat-icons/64/undefined/external-history-history-flaticons-flat-flat-icons-6.png")),
+                          Container(
+                            child: Text(
+                              "History",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.all(15.0),
-                      padding: EdgeInsets.all(8.0),
-                      child: Text(
-                        "Horror",
-                        style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black),
-                        textAlign: TextAlign.center,
+                      width: 100.0,
+                      height: 100.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                              width: 64,
+                              height: 64,
+                              child: Image.network(
+                                  "https://img.icons8.com/external-bzzricon-flat-bzzricon-studio/64/undefined/external-couple-valentines-day-bzzricon-flat-bzzricon-flat-bzzricon-studio.png")),
+                          Container(
+                            child: Text(
+                              "Romance",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Container(
+                      width: 100.0,
+                      height: 100.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                              width: 64,
+                              height: 64,
+                              child: Image.network(
+                                  "https://img.icons8.com/fluency/64/undefined/horror.png")),
+                          Container(
+                            child: Text(
+                              "Thriller",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 100.0,
+                      height: 100.0,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                              width: 64,
+                              height: 64,
+                              child: Image.network(
+                                  "https://img.icons8.com/external-dreamcreateicons-flat-dreamcreateicons/64/undefined/external-skull-halloween-dreamcreateicons-flat-dreamcreateicons.png")),
+                          Container(
+                            child: Text(
+                              "Horror",
+                              style: TextStyle(
+                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
