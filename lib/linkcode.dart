@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'genre.dart';
 
 void main() => runApp(MyApp());
+void submit() {}
 
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
